@@ -1,0 +1,147 @@
+.Table {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.table__name {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    color: #2d3748;
+}
+
+.table__heading {
+    margin: 2px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table__data {
+    width: 10rem;
+    padding: 10px 10px;
+    font-size: 1.4rem;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.03rem;
+    text-align: center;
+}
+
+.table__list {
+    margin: 2px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.flag {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+#th__countryname {
+    width: 28rem;
+    background-color: #bcf0da;
+    color: #108885;
+}
+
+#th__activecases {
+    color: #4299e1;
+    background-color: #caf0f8;
+}
+
+#th__cases {
+    background-color: #e2e8f0;
+    color: #718096;
+}
+
+#th__recovered {
+    background-color: #c6f6d5;
+    color: #38a169;
+}
+
+#th__deaths {
+    background-color: #fed7d7;
+    color: #e53e3e;
+}
+
+#tr__countryname {
+    width: 28rem;
+    background-color: #def7ec;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    color: #108885;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#tr__activecases {
+    font-size: 1.2rem;
+    background-color: #edf2fb;
+    color: #4299e1;
+}
+
+#tr__cases {
+    font-size: 1.2rem;
+    background-color: #edf2f7;
+    color: #718096;
+}
+
+#tr__recovered {
+    font-size: 1.2rem;
+    background-color: #f0fff4;
+    color: #38a169;
+}
+
+#tr__deaths {
+    font-size: 1.2rem;
+    background-color: #fff5f5;
+    color: #e53e3e;
+}
+
+.showmore__button {
+    width: 100%;
+    margin: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showmore__text {
+    background-color: white;
+    font-size: 1.2rem;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.03rem;
+    text-align: center;
+    border: none;
+    color: #108885;
+    cursor: pointer;
+}
+
+.showmore__text:hover {
+
+    color: #e53e3e;
+}
