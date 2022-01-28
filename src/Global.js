@@ -26,7 +26,7 @@ function Global({ list, casetype }) {
                 <div id="cases__number" className="global__data__number">{(casetype === "Today") ? (todayCases.toLocaleString('en-US')) : (overallCases.toLocaleString('en-US'))}</div>
                 <div id="cases__text" className="global__data__text">Total Confirmed {casetype}</div>
             </div>
-            <div className="global__data__display">
+            <div id="global__data__display__mid" className="global__data__display">
                 <div id="recovered__number"  className="global__data__number">{(casetype === "Today") ? (todayRecovered.toLocaleString('en-US')) : (overallRecovered.toLocaleString('en-US'))}</div>
                 <div id="recovered__text" className="global__data__text">Total Recovered {casetype}</div>
             </div>

@@ -15,38 +15,42 @@
     width: 100%;
     margin-bottom: 20px;
     font-size: 1.5rem;
-    font-family: 'Cairo', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
-    letter-spacing: 0.05rem;
     text-align: center;
     color: #2d3748;
 }
 
+.table__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .table__heading {
+    width: 100%;
     margin: 2px 0;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .table__data {
     width: 10rem;
-    padding: 10px 10px;
-    font-size: 1.4rem;
-    font-family: 'Cairo', sans-serif;
+    padding: 10px;
+    font-size: 1.25rem;
     font-family: 'Source Sans Pro', sans-serif;
-    letter-spacing: 0.03rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
 .table__list {
+    width: 100%;
     margin: 2px 0;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -60,7 +64,7 @@
 }
 
 #th__countryname {
-    width: 28rem;
+    width: 40%;
     background-color: #bcf0da;
     color: #108885;
 }
@@ -85,8 +89,13 @@
     color: #e53e3e;
 }
 
+tr {
+    height: max-content;
+    background-color: var(#afb5bd);
+}
+
 #tr__countryname {
-    width: 28rem;
+    width: 40%;
     background-color: #def7ec;
     display: flex;
     flex-direction: row;
@@ -94,12 +103,17 @@
     justify-content: flex-start;
     color: #108885;
     font-size: 1.2rem;
+    text-align: left;
     cursor: pointer;
+}
+
+#tr__countryname:hover {
+    background-color: #bcf0da;
 }
 
 #tr__activecases {
     font-size: 1.2rem;
-    background-color: #edf2fb;
+    background-color: #d6ebfc;
     color: #4299e1;
 }
 
@@ -142,6 +156,93 @@
 }
 
 .showmore__text:hover {
-
     color: #e53e3e;
+}
+
+@media (max-width: 650px) {
+    .flag {
+        width: 25px;
+        height: 25px;
+        margin: 0;
+    }
+
+    .table__data {
+        font-size: 1.1rem;
+    }
+
+    #tr__countryname {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #tr__activecases {
+        font-size: 1rem;
+    }
+    
+    #tr__cases {
+        font-size: 1rem;
+    }
+    
+    #tr__recovered {
+        font-size: 1rem;
+    }
+    
+    #tr__deaths {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 585px) {
+    #th__recovered {
+        display: none;
+    }
+    
+    #th__deaths {
+        display: none;
+    }
+
+    #tr__recovered {
+        display: none;
+    }
+    
+    #tr__deaths {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .table__data {
+        width: 5rem;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 350px) {
+    .table__data {
+        font-size: 0.8rem;
+    }
+
+    #tr__countryname {
+        font-size: 0.8rem;
+    }
+    
+    #tr__activecases {
+        font-size: 0.8rem;
+    }
+    
+    #tr__cases {
+        font-size: 0.8rem;
+    }
+    
+    #tr__recovered {
+        font-size: 0.8rem;
+    }
+    
+    #tr__deaths {
+        font-size: 0.8rem;
+    }
 }

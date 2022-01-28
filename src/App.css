@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Source+Sans+Pro:wght@600&display=swap');
 
 .App {
-  margin: 0;
-  padding: 0;
   width: 100%;
   min-height: 100vh;
-  font-family: 'Cairo', sans-serif;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -16,8 +13,8 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
   text-decoration: none;
-  border-bottom: 1.5px solid #e2e8f0;
   position: sticky;
   top: 0;
 }
@@ -36,28 +33,8 @@
   color: #e53e3e;
 }
 
-.nav__buttons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.button {
-  margin: 0 10px;
-  background-color: inherit;
-  color: #108885;
-  font-size: 1.2rem;
-  font-family: 'Cairo', sans-serif;
-  font-family: 'Source Sans Pro', sans-serif;
-  border: none;
-  cursor: pointer;
-}
-
-.button:hover {
-  color: #e53e3e;
-}
-
-.button:focus {
-  color: #e53e3e;
+@media (max-width: 500px) {
+  .site__name {
+    font-size: 1.4rem;
+  }
 }

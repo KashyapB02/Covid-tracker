@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import "./Table.css";
 
@@ -18,7 +19,8 @@ function Table({ list }) {
 
     return (
         <div className='Table'>
-                <div className="table__name">Countries Affected</div>
+            <div className="table__name">Countries Affected</div>
+            <div className='table__container'>
                 <div className="table__heading">
                     <div id="th__countryname" className="table__data">Country</div>
                     <div id="th__activecases" className="table__data">Active Cases</div>
@@ -31,7 +33,7 @@ function Table({ list }) {
                             <div className="table__list" key={index}>
                                 <div id="tr__countryname" className="table__data">
                                     <img src={dataElements.countryInfo.flag} alt="" className="flag" />
-                                    {dataElements.country}
+                                    <span>{dataElements.country}</span>
                                 </div>
                                 <div id="tr__activecases" className="table__data">{dataElements.active}</div>
                                 <div id="tr__cases" className="table__data">{dataElements.cases}</div>
@@ -40,6 +42,7 @@ function Table({ list }) {
                             </div>
                         );
                     })}
+            </div>
             <div className="showmore__button">
                 <button className="showmore__text" onClick={handleListSize}>{listDisplayAction}</button>
             </div>
