@@ -1,0 +1,37 @@
+.table {
+  margin-top: 20px;
+  overflow-y: scroll;
+  color: #6a5d5d;
+  background-color: white;
+  height: 800px;
+}
+
+.table tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flag__container {
+  display: flex;
+  padding: 2.5px 0;
+}
+
+.flag {
+  width: 50px;
+  object-fit: contain;
+}
+
+.table td {
+  padding: 0.5rem;
+  border: none;
+}
+
+.table tr:nth-of-type(odd) {
+  background-color: #f3f2f8;
+}
+
+@media (max-width: 990px) {
+  .table {
+    height: 400px;
+  }
+}

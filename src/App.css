@@ -1,40 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Source+Sans+Pro:wght@600&display=swap');
-
-.App {
-  width: 100%;
-  min-height: 100vh;
-  font-family: 'Source Sans Pro', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logodiv {
-  background-color: white;
+body {
+  background-color: #f5f6fa;
+}
+
+.app {
   display: flex;
-  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #f5f6fa;
+  padding: 30px 20px;
+}
+.app__left {
+  flex: 0.9;
+}
+.app__dropdown {
+  background-color: white;
+}
+
+.app__header {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
-  position: sticky;
-  top: 0;
+  margin-bottom: 20px;
+  justify-content: space-between;
 }
 
-.logo__img {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
+.app__header > h1 {
+  color: #fc3c3c;
+  font-size: 2rem;
 }
 
-.site__name {
-  font-size: 1.6rem;
+.app__stats {
+  display: flex;
+  justify-content: space-between;
 }
 
-.site__name:nth-child(3) {
-  color: #e53e3e;
-}
-
-@media (max-width: 500px) {
-  .site__name {
-    font-size: 1.4rem;
+@media (max-width: 990px) {
+  .app,
+  .app__stats {
+    flex-direction: column;
   }
+  .app__header > h1 {
+  font-size: 1.5rem;
+}
 }
